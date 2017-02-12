@@ -1,0 +1,49 @@
+name = adie
+description = Default theme adie web site
+core = 7.x
+
+;-------------------- C S S -----------------------
+; We include one "editor" stylesheet that contains
+; resets and normalizations as well as styles used
+; by editors such as typography and styles for use
+; in a WYSIWYG editor.
+;
+; All other styles will be placed in the styles
+; file. This will include styles for layout, page
+; elements, features and print overrides.
+
+stylesheets[all][] = assets/css/app.css
+stylesheets[all][] = assets/css/animate.css
+stylesheets[all][] = libraries/owl-carousel/owl.carousel.css
+stylesheets[all][] = libraries/owl-carousel/owl.theme.css
+
+;-------------------- J S -----------------------
+scripts[] = assets/bower_components/jquery/dist/jquery.min.js
+scripts[] = assets/js/vendors/foundation.min.js
+scripts[] = assets/js/vendors/owl.carousel.min.js
+scripts[] = libraries/owl-carousel/owl.carousel.min.js
+scripts[] = assets/js/app.js
+
+; ========================================
+; Regions
+; ========================================
+
+regions[iqa] = IQA
+regions[meteo] = Météo
+regions[social_networks] = Links Social Networks
+regions[search_block] = The search block
+regions[main-menu] = The menu main
+regions[sub_header] = Sub header Area
+regions[breadcrumb] = The breadcrumb
+regions[annonce] = Annonce space
+regions[highlighted] = The highlighted
+regions[content] = The main content
+regions[right_sidebar] = The sidebar
+regions[green_rectangle] = The tree green rectangles
+regions[social_networks_embed] = The social network block
+regions[cop] = Link to cop pages
+regions[map_sn] = Carte du senegal
+regions[full_block] = The full block
+regions[partner] = Partenaires
+regions[footer] = The footer
+regions[help] = Help

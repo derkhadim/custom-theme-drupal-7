@@ -1,0 +1,14 @@
+.item-list
+	margin-top: 40px
+	+grid-row
+	.pager
+		li
+			background-color: $white
+			padding: 6px 10px
+			a
+				color: $green
+			&:hover
+				background-color: rgba($green, .1)
+			&.pager-current
+				background-color: $green
+				color: $white

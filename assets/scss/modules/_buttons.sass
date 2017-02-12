@@ -1,0 +1,20 @@
+.button
+	border-radius: 2px !important
+	font-weight: 600
+.more-link
+	+grid-row
+	margin: 20px 0
+	text-align: center
+	& > a
+		+button-style($green, darken($green, 10), $white)
+		@extend .button
+
+.btn-white
+	+button-style($white, $green, $black)
+	border-radius: 2px !important
+	@extend .button
+
+
+input[type="submit"]
+	+button-style($green, darken($green, 10), $white)
+	@extend .button

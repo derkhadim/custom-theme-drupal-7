@@ -1,0 +1,17 @@
+#content-author-navigation
+	.tabs
+		+grid-row
+		&.primary
+			+menu-base
+			background-color: transparent !important
+			li
+				font-weight: bold
+				a
+					color: $black
+				&:hover
+					a
+						color: $white
+				&.active
+					background-color: $green
+					a.active
+						color: $white

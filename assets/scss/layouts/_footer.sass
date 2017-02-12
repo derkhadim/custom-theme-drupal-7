@@ -1,0 +1,80 @@
+.footer
+  border-top: 1px #D7D7D7 solid
+  background-color: #FCFCFC
+  padding-top: 25px
+  position: relative
+  background: url('../images/header-bg.png') no-repeat center bottom
+  background-size: cover
+  &:before
+    content: ' '
+    background: url('../images/footer-flag.png') no-repeat center
+    position: absolute
+    width: 70px
+    height: 3px
+    display: inline-block
+    top: 0
+    left: calc(50% - 35px)
+
+  #block-menu-menu-menu-premier-niveau
+    & .menu
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-bottom: 10px
+      li
+        margin: 0 !important
+        display: flex
+        justify-content: space-around
+        align-items: center
+        flex-wrap: wrap
+        &:after
+          content: ' | '
+          padding: 0 10px
+        &:last-child
+          &:after
+            display: none
+        a
+          color: $black
+          font-size: 14px
+          font-weight: 600
+          &:hover
+            color: $black
+
+  #block-menu-menu-menu-footer-deuxi-me-niveau
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 15px
+    & > .menu
+      margin: 0 !important
+      display: flex
+      justify-content: space-around
+      align-items: center
+      flex-wrap: wrap
+      li
+        padding: 0 4px
+        a
+          color: $black
+          font-size: 14px
+          &:hover
+            color: $black
+  .wrap-bottom-footer
+    background-color: $bgc-footer
+    .bottom-footer
+      padding: 15px 10px
+      @include grid-row
+      span
+        color: $black
+        &:last-child
+          float: right
+
+@media screen and (max-width: 760px)
+  .footer
+    #block-menu-menu-menu-premier-niveau
+      & > .menu
+        flex-direction: column !important
+        li:after
+          content: ' ' !important
+    #block-menu-menu-menu-footer-deuxi-me-niveau
+      & > .menu
+        flex-direction: column !important
