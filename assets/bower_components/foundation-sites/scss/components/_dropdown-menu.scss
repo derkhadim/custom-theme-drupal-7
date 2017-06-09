@@ -199,7 +199,7 @@ $dropdownmenu-border-width: nth($dropdownmenu-border, 1);
     min-width: $dropdownmenu-min-width;
 
     border: $dropdownmenu-border;
-    background: $green;
+    // background: $green;
 
     .is-dropdown-submenu-parent {
       @if $dropdownmenu-arrows {

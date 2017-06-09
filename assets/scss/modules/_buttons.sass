@@ -6,15 +6,15 @@
 	margin: 20px 0
 	text-align: center
 	& > a
-		+button-style($green, darken($green, 10), $white)
+		+button-style($main-color, darken($main-color, 10), $white)
 		@extend .button
 
 .btn-white
-	+button-style($white, $green, $black)
+	+button-style($white, $main-color, $black)
 	border-radius: 2px !important
 	@extend .button
 
 
 input[type="submit"]
-	+button-style($green, darken($green, 10), $white)
+	+button-style($main-color, darken($main-color, 10), $white)
 	@extend .button

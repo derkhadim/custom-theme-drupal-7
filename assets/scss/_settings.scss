@@ -50,7 +50,7 @@ $global-font-size: 100%;
 $global-width: rem-calc(1170);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: $green,
+  primary: $main-color,
   secondary: #767676,
   success: #3adb76,
   warning: #ffae00,
@@ -63,7 +63,7 @@ $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: Helvetica, sans-serif, Roboto, Arial, sans-serif;
+$body-font-family: 'MyriadPro-Regular', Helvetica, sans-serif, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -141,7 +141,7 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: $green;
+$anchor-color: $main-color;
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
